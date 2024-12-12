@@ -1,0 +1,370 @@
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style type="text/css">body {
+
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            padding: 0;
+
+            background: linear-gradient(45deg, #de4758, #8fc997, #3fafdd, #e9971a, #b24080);
+
+            background-size: 400% 400%;
+
+            animation: gradientAnimation 10s ease infinite;
+
+            color: #fff;
+
+        }
+
+
+
+        @keyframes gradientAnimation {
+
+            0% { background-position: 0% 50%; }
+
+            50% { background-position: 100% 50%; }
+
+            100% { background-position: 0% 50%; }
+
+        }
+
+
+
+        header {
+
+            text-align: center;
+
+            padding: 20px;
+
+        }
+
+
+
+        .header-image {
+
+            width: 100%;
+
+            height: auto;
+
+            max-height: 400px;
+
+            object-fit: contain;
+
+        }
+
+
+
+        section {
+
+            padding: 20px;
+
+            text-align: center;
+
+        }
+
+
+
+        .products {
+
+            display: flex;
+
+            flex-wrap: nowrap;
+
+            gap: 20px;
+
+            overflow-x: auto;
+
+            justify-content: center;
+
+        }
+
+
+
+        .product {
+
+            background-color: rgba(255, 255, 255, 0.1);
+
+            backdrop-filter: blur(10px);
+
+            padding: 20px;
+
+            border-radius: 10px;
+
+            min-width: 200px;
+
+            max-width: 200px;
+
+            text-align: center;
+
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            animation: float 3s ease-in-out infinite;
+
+        }
+
+
+
+        @keyframes float {
+
+            0% { transform: translateY(0); }
+
+            50% { transform: translateY(-10px); }
+
+            100% { transform: translateY(0); }
+
+        }
+
+
+
+        .product img {
+
+            width: 100%;
+
+            height: auto;
+
+            border-radius: 10px;
+
+            object-fit: contain;
+
+        }
+
+
+
+        .order-btn, .discover-btn {
+
+            background-color: #fff;
+
+            color: #000;
+
+            padding: 10px 20px;
+
+            text-decoration: none;
+
+            border-radius: 5px;
+
+            margin-top: 10px;
+
+            display: inline-block;
+
+            transition: all 0.3s ease;
+
+        }
+
+
+
+        .order-btn:hover, .discover-btn:hover {
+
+            background-color: #000;
+
+            color: #fff;
+
+        }
+
+
+
+        footer {
+
+            text-align: center;
+
+            padding: 10px;
+
+            background-color: rgba(0, 0, 0, 0.5);
+
+            color: #fff;
+
+        }
+
+
+
+        .new-section {
+
+            padding: 20px;
+
+            position: relative;
+
+            margin: 20px auto;
+
+            width: 90%;
+
+            max-width: 1200px;
+
+            text-align: left;
+
+        }
+
+
+
+        .new-section h2 {
+
+            margin-bottom: 10px;
+
+            font-size: 1.5em;
+
+            position: relative;
+
+            z-index: 2; /* لضمان ظهور العنوان فوق المربع المموه */
+
+        }
+
+
+
+        .new-section p {
+
+            margin-top: 10px;
+
+        }
+
+
+
+        .new-section .section-content {
+
+            margin-top: 20px;
+
+            background-color: rgba(255, 255, 255, 0.2);
+
+            backdrop-filter: blur(8px);
+
+            border-radius: 10px;
+
+            padding: 20px;
+
+        }
+
+
+
+        /* وضع الخط أسفل العنوان بشكل منفصل عن المربع المموه */
+
+        .new-section h2::after {
+
+            content: "";
+
+            position: absolute;
+
+            top: 100%; /* وضع الخط أسفل العنوان */
+
+            left: 0;
+
+            width: 100%;
+
+            height: 2px;
+
+            background-color: #fff;
+
+            margin-top: 10px; /* المسافة بين العنوان والخط */
+
+            z-index: 1; /* تأكيد أن الخط سيكون أسفل العنوان */
+
+        }
+
+
+
+        /* تصميم خاص بالهواتف */
+
+        @media (max-width: 768px) {
+
+            .products {
+
+                flex-direction: column;
+
+                align-items: center;
+
+            }
+
+            .product {
+
+                max-width: 90%;
+
+            }
+
+        }
+</style>
+<header><img alt="Fruit and Cookies" class="header-image" src="https://lh3.google.com/u/0/d/17vsva-xjrYb4d6iyagNDBvX2Nljs4YU7=w1920-h911-iv2" /></header>
+
+<section>
+<h2>Enjoy the Best Cookies from Didos</h2>
+
+<p>Try now 5 unique flavors of fruit-filled cookies</p>
+<a class="discover-btn" href="#our-products">Discover Our New Products</a></section>
+
+<section id="our-products">
+<h2>Our Products</h2>
+
+<div class="products">
+<div class="product">
+<h3>Strawberry Choco</h3>
+<img alt="Strawberry Choco" src="https://lh3.google.com/u/0/d/1hMFwNAwvwbxmu0Uv9x5YYZLVO3yW3eUh=w1920-h911-iv1" /> <a class="order-btn" href="#">Order Now</a></div>
+
+<div class="product">
+<h3>Original Fruit</h3>
+<img alt="Original Fruit" src="https://lh3.google.com/u/0/d/1QAsyl_2tFA-Ll-dCiOiKFSBUY3lBSwPE=w1920-h911-iv1" /> <a class="order-btn" href="#">Order Now</a></div>
+
+<div class="product">
+<h3>Chocolate Fruit</h3>
+<img alt="Chocolate Fruit" src="https://lh3.google.com/u/0/d/1rJgUxT3f-mgoTm-eKTp-vIX94trN63jK=w1920-h911-iv1" /> <a class="order-btn" href="#">Order Now</a></div>
+
+<div class="product">
+<h3>Oats Fruit</h3>
+<img alt="Oats Fruit" src="https://lh3.google.com/u/0/d/1-JmZxzN8RDXwA1yDv1F9QK_CEdFchQpL=w1920-h911-iv1" /> <a class="order-btn" href="#">Order Now</a></div>
+
+<div class="product">
+<h3>White Chocolate</h3>
+<img alt="White Chocolate" src="https://lh3.google.com/u/0/d/1gU9T-rybv7qwWe5NdBYqR5hMridaxG8d=w1920-h911-iv1" /> <a class="order-btn" href="#">Order Now</a></div>
+</div>
+</section>
+
+<section class="new-section">
+<h2>Features and Benefits</h2>
+
+<div class="section-content">
+<p>Our cookies are made with premium ingredients and real fruits to provide a healthy, flavorful snack.</p>
+</div>
+</section>
+
+<section class="new-section">
+<h2>Testimonials</h2>
+
+<div class="section-content">
+<p>"The best cookies I've ever tasted! Absolutely amazing." - Customer</p>
+</div>
+</section>
+
+<section class="new-section">
+<h2>FAQs</h2>
+
+<div class="section-content">
+<p>Are there any age or health restrictions?<br />
+Avoid consuming the product with certain allergens like nuts.</p>
+</div>
+</section>
+
+<section class="new-section">
+<h2>Our Partners</h2>
+
+<div class="section-content">
+<p>Partnering with major retailers and distributors for your convenience.</p>
+</div>
+</section>
+
+<section class="new-section">
+<h2>Find Didos</h2>
+
+<div class="section-content">
+<p>Available at famous places like City Center, Carrefour, and leading supermarkets.</p>
+</div>
+</section>
+
+<section class="new-section">
+<h2>Contact Information</h2>
+
+<div class="section-content">
+<p>Email: support@didos.com | Follow us on social media: @didos_cookies</p>
+</div>
+</section>
+
+<footer>
+<p>© 2024. Made with <a href="https://www.behance.net/abgdnasry" style="color: gold;">ABGD'S ART</a></p>
+
+<p>All rights reserved</p>
+</footer>
